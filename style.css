@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+body{
+  text-align: center;
+  font-family: 'Roboto';
+  background-color: #111010;
+}
+.area{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 40px;
+  z-index: 2;
+  width: 340px;
+  backdrop-filter: blur(12px) brightness(104%);
+  transition-duration: 0.4s;
+  box-shadow: 0 0 20px black;
+}
+h1{
+  padding: 20px;
+  color: white;
+  font-size: 35px;
+}
+.circle1{
+  height: 160px;
+  width: 160px;
+  background: linear-gradient(aqua,orange);
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) translateX(-140px) translateY(-50px);
+}
+.circle2{
+  height: 180px;
+  width: 180px;
+  background: linear-gradient(pink,red);
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) translateY(120px) translateX(120px);
+}
+.area:hover{
+  border: solid 5px white;
+}
